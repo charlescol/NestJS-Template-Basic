@@ -4,7 +4,6 @@ Template NestJS
 - Typescript
 - Eslint / Prettier
 - Fastify
-- TypeORM
 - Swagger
 
 Package datant du 11/01/2023
