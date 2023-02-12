@@ -29,6 +29,11 @@ dist/
 # VS-Code
 .vscode
 
+# Env files
+.env
+env/*
+!env/env.example
+
 # Unit test reports
 TEST*.xml
 
