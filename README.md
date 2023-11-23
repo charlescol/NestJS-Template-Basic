@@ -5,6 +5,4 @@ Template NestJS
 - Eslint / Prettier
 - Fastify
 - Swagger
-
-## TODO
-- Ajouter l'architecture des dossiers
+- Jest

@@ -7,6 +7,8 @@ module.exports = {
   },
   plugins: ['@typescript-eslint/eslint-plugin'],
   extends: [
+    'airbnb-base',
+    'airbnb-typescript/base',
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
   ],
@@ -19,6 +21,7 @@ module.exports = {
   rules: {
     'class-methods-use-this': 'off',
     'no-await-in-loop': 'off',
+    'default-case' : 'off',
     'import/no-cycle': 'off',
     'no-param-reassign' : 'off',
     "prettier/prettier": ["error",{
