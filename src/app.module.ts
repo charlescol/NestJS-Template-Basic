@@ -1,10 +1,10 @@
-import { ConfigModule } from "@nestjs/config";
-import AppService from "./app.service";
-import AppController from "./app.controller";
 import * as path from "path";
 import { Module } from "@nestjs/common/decorators";
-
-const ENV = process.env.NODE_ENV || "local";
+import globalConfig from "@configs/global.config";
+import { ConfigModule } from "@nestjs/config";
+import validationSchema from "@configs/joi/validationSchema";
+import AppController from "./app.controller";
+import AppService from "./app.service";
 
 @Module({
   controllers: [AppController],
@@ -12,8 +12,13 @@ const ENV = process.env.NODE_ENV || "local";
   imports: [
     ConfigModule.forRoot({
       isGlobal: true,
-      load: [],
-      envFilePath: path.resolve(process.cwd(), "env", `.env.${ENV}`),
+      load: [globalConfig],
+      envFilePath: path.resolve(
+        process.cwd(),
+        "env",
+        `.env.${process.env.NODE_ENV || "local"}`
+      ),
+      validationSchema,
     }),
   ],
 })

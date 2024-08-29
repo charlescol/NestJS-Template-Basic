@@ -20,7 +20,6 @@
   "testTimeout": 120000,
   "coverageDirectory": "../test_results/coverage",
   "maxConcurrency": 1,
-  
   "reporters": [
     "default", [
       "jest-stare",

@@ -37,6 +37,17 @@ class JestService {
 
     return e2eApp;
   }
+
+  static async closeApp(app: NestFastifyApplication): Promise<void> {
+    try {
+    } catch (error) {
+      // eslint-disable-next-line no-console
+      console.error("Error during cleanup:", error);
+    } finally {
+      /* Ensure the application is closed */
+      await app.close();
+    }
+  }
 }
 
 export default JestService;
