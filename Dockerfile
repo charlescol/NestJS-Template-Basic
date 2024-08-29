@@ -7,7 +7,7 @@ COPY package.json yarn.lock ./
 FROM base as tester
 RUN yarn install --frozen-lockfile
 COPY . .
-CMD yarn typeorm migration:run && yarn run test
+CMD yarn run test
 
 # Stage 2: Building the Application for Production
 FROM base as builder

@@ -10,7 +10,6 @@
     "^@common/(.*)$": "<rootDir>/common/$1",
     "^@configs/(.*)$": "<rootDir>/configs/$1",
     "^@custom/(.*)$": "<rootDir>/custom/$1",
-    "^@database/(.*)$": "<rootDir>/database/$1",
     "^@models/(.*)$": "<rootDir>/models/$1",
     "^@providers/(.*)$": "<rootDir>/common/providers/$1",
     "^@src/(.*)$": "<rootDir>/$1"

@@ -24,7 +24,6 @@
     "paths": {
       "@configs/*": ["src/configs/*"],
       "@models/*": ["src/models/*"],
-      "@database/*": ["src/configs/database/*"],
       "@providers/*": ["src/common/providers/*"],
       "@common/*": ["src/common/*"],
       "@src/*": ["src/*"],
