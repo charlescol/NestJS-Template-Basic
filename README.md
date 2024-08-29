@@ -1,6 +1,6 @@
 # Marketaux
 
-This service is designed to scrape market data from external systems and communicate it in a formatted way to a target system.
+This project is a template for NestJS. It offers a robust starting point and includes fundamental unit tests and end-to-end tests, exemplified through a simple "Hello World" function located in the main application module.
 
 ## Key Commands
 
